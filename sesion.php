@@ -25,7 +25,7 @@
                         <input type="password" class='formulario-input' name='clave' onfocusout ='prueba(this);' required>
                         <label for="" class='sesion-label formulario-label'>CONTRASEÑA</label>
 
-                        <input type="submit" value='INICIAR' class='formulario-submit'>
+                        <input type="submit" value='INICIAR' name='entrar' class='formulario-submit'>
                     </form>
                 </div>
             </div>

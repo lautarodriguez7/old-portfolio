@@ -2,6 +2,7 @@
 
     $usuario = $_POST['usuario'];
     $clave = $_POST['clave'];
+    $entrar = $_POST['entrar'];
 
     session_start();
     $_SESSION['usuario']=$usuario;
@@ -13,13 +14,16 @@
 
     $filas=mysqli_num_rows($resultado);
 
-
-    if($filas) {
-        header('Location:../sesion-abierta.php');
+    if(isset($entrar)) {
+        if($filas) {
+            header('Location:../sesion-abierta.php');
+        } else {
+            header('Location:../sesion.php');
+        }    
     } else {
-        header('Location:../sesion.php');
+        
     }
-
+  
     mysqli_free_resulta($resultado);
     mysqli_close($conexion);
 ?>
