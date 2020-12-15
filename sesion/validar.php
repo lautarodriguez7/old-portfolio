@@ -4,8 +4,9 @@
     $clave = $_POST['clave'];
 
     session_start();
+    $_SESSION['usuario']=$usuario;
 
-    $conexion = mysqli_connect('localhost','root','','sesion');
+    include('conexion.php');
     $consulta = "SELECT * FROM usuarios WHERE usuario='$usuario' AND clave='$clave'";
 
     $resultado = mysqli_query($conexion, $consulta);
@@ -15,10 +16,8 @@
 
     if($filas) {
         header('Location:../sesion-abierta.php');
-        '<h1>Bienvenido . $usuario</h1>';
     } else {
         header('Location:../sesion.php');
-        '<h1>ERROR EN LA AUTENTIFICACION</h1>';
     }
 
     mysqli_free_resulta($resultado);

@@ -8,7 +8,7 @@
 
 body, header, video {
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 #titulo {
@@ -21,7 +21,8 @@ body, header, video {
     z-index: 9;
     position: absolute;
     color:white;
-    font-size: 13px;
+    font-size: 14px;
+    margin: 10px;
 }
 
 #contenedor-nav {
@@ -46,6 +47,7 @@ body, header, video {
     margin-top: 30px;
     margin-right: 30px;
     text-decoration: none;
+    transition:400ms;
 }
 
 .nav:hover {
@@ -55,6 +57,22 @@ body, header, video {
     font-size:25px;
     text-decoration: none;
 
+}
+
+#cerrar-sesion {
+    color: white;
+    font-size: 15px;
+    margin-left: 15px;
+    font-weight: 800;
+}
+
+
+#cerrar-sesion:hover {
+    transition:300ms;
+    background:#2c3e50;
+    font-size: 18px;
+    margin-left: 7.5px;
+    text-decoration: none;
 }
 
 #titulo-header {
@@ -68,14 +86,15 @@ body, header, video {
 
 }
 
-#contenedor-par {
-    width: 35%;
-    z-index: 999;
+section {
+    height: 100%;
+    width: auto;
 }
 
-#imagen {
+#contenedor-par {
     width: 100%;
-    height: auto;
+    height: 100%;
+    z-index: 999;
     position: absolute;
 }
 
@@ -86,6 +105,78 @@ body, header, video {
     flex-direction: column;
 }
 
+.modall {
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+  }
+
+  #myBtn {
+      display: flex;
+      color:white;
+      text-decoration: none;
+      margin:10px;
+      border:none;
+      background: none;
+      font-size:20px;
+      cursor: pointer;
+      transition:  0.4s;
+      font-weight: 800;
+      border-bottom: 3px solid #2c3e50;
+  }
+
+  #myBtn:hover {
+    background:#2c3e50;
+    font-size:22px;
+    transition:  0.4s;
+  }
+  
+  #modal-contenido {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 25%;
+    height: 35%;
+    box-shadow: 0 0 20px 1px rgb(0 0 0);
+    z-index: -99;
+  }
+  
+  #contenedor-sesion {
+    display: inline-flex;
+    flex-wrap: wrap;
+  }
+
+  .sesion-label {
+      margin:10px;
+      margin-bottom: 0;
+      font-weight: 700;
+      width: 20%;
+  }
+
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
 
 #section-par h1, p {
     color:black;
@@ -95,26 +186,27 @@ body, header, video {
 }
 
 #par1, #par2 {
-    margin: 35px;
-    padding: 30px;
-    /* background: #e9ecef; */
+    margin:10px;
+    margin-top: 5%;
+    padding: 5px;
+    width: 35%;
     background: rgba(255,255, 255, 0.7);
     box-shadow: 0 0 20px 1px rgb(0 0 0);
-    margin-top:100px;
 }
 
 #section-formulario {
     display: flex;
     position: relative;
-    margin-top:3.8%;
-}
+    }
 
 #envio {
     margin-top: 20px;
 }
 
-#section-formulario img {
+.imagen {
     width: 100%;
+    height: 100%;
+    position: relative;
     z-index: -9;
 }
 
@@ -135,7 +227,7 @@ body, header, video {
 #contenedor-poke {
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 44%;
     height: 22%;
     margin-left: 55%;
     margin-top: 23%;
@@ -151,6 +243,11 @@ body, header, video {
     position: absolute;
     margin-left: 40px;
     text-transform: uppercase;
+}
+
+#pokemon {
+    width: 100%;
+    height: auto;
 }
 
 #formulario {
@@ -194,7 +291,7 @@ body, header, video {
     border:none;
     cursor: pointer;
     height: 40px;
-    width: 65px;
+    width: 70px;
     font-family: 'IBM Plex Mono', monospace;
 }
 
@@ -205,8 +302,6 @@ body, header, video {
     outline: 1px solid rgba(0,0,0,0.7);
     padding: 10px;
     margin-top: 20px;
-    /* transition: all 0.2s; */
-
 }
 
 .formulario-input:focus + .formulario-label{ 
