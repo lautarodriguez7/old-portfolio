@@ -26,7 +26,7 @@
         <div id='contenedor-nav'>
             <a class='nav' href="">INICIO</a>
             <a class='nav' href="#section-par">SOBRE MI</a>
-            <a class='nav' href="#contenedor-poke">JUGÁ</a>
+            <a class='nav' href="#contenedor-fotos">FOTOS</a>
             <a class='nav' href="#section-formulario">CONTACTAME</a>
         </div>
 

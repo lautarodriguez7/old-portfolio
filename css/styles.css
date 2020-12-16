@@ -179,8 +179,8 @@ section {
   }
 
   #contenedor-fotos {
-    background: rgba(253, 136, 3, 0.3);
-    margin: 0;
+    background:rgba(253, 136, 3, 0.4);
+    margin: 10px;
   }
 
   #contenedor-fotos ul {
@@ -199,6 +199,9 @@ ul li {
     text-transform: capitalize;
     box-shadow: 0 0 20px 1px rgb(175, 210, 218);
     background: rgba(253, 136, 3, 0.5);
+    box-shadow: 5px 5px 27px 5px rgba(253, 136, 3, 0.4);
+    margin: 5px;
+
 }
 
 #contenedor-fotos img {
