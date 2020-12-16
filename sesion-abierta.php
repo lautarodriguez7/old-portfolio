@@ -10,9 +10,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     
+    <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/index.js"></script>
     <script src="js/pokemons.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>    
     <title>Aru-Web</title>
 </head>
 
@@ -69,6 +69,31 @@
         </div>
     </section>
 
+    <section id='section-fotos'>
+        <div id='contenedor-fotos'>
+            <ul>
+                <li class="enlaces activo" data-nombre='todos' onclick='seleccion(this)'>TODOS</li>
+                <li class="enlaces" data-nombre='web' onclick='seleccion(this)'>WEB</li>
+                <li class="enlaces" data-nombre='ilustraciones' onclick='seleccion(this)'>ILUSTRACIONES</li>
+                <li class="enlaces" data-nombre='diseños' onclick='seleccion(this)'>DISEÑOS</li>
+            </ul>
+            <div class='fotos'>
+                <div class='caja filtro web'><img  class='imagen' src="fotos/pexels5.jpg" alt=""></div>
+                <div class='caja filtro ilustraciones'><img  class='imagen' src="fotos/pexels1.jpg" alt=""></div>
+                <div class='caja filtro diseños'><img  class='imagen' src="fotos/pexels5.jpg" alt=""></div>
+                <div class='caja filtro web'><img  class='imagen' src="fotos/pexels5.jpg" alt=""></div>
+                <div class='caja filtro ilustraciones'><img  class='imagen' src="fotos/pexels1.jpg" alt=""></div>
+                <div class='caja filtro diseños'><img  class='imagen' src="fotos/pexels5.jpg" alt=""></div>
+                <div class='caja filtro web'><img  class='imagen' src="fotos/pexels5.jpg" alt=""></div>
+                <div class='caja filtro ilustraciones'><img  class='imagen' src="fotos/pexels1.jpg" alt=""></div>
+                <div class='caja filtro diseños'><img  class='imagen' src="fotos/pexels5.jpg" alt=""></div>
+                <div class='caja filtro web'><img  class='imagen' src="fotos/pexels5.jpg" alt=""></div>
+                <div class='caja filtro ilustraciones'><img  class='imagen' src="fotos/pexels1.jpg" alt=""></div>
+                <div class='caja filtro diseños'><img  class='imagen' src="fotos/pexels5.jpg" alt=""></div>
+            </div>
+        </div>
+
+    </section>
     <section id='section-formulario'>
         <img src="fotos/pexels1.jpg" alt="" class='imagen'>
         <div id='contenedor-formulario'>
