@@ -10,20 +10,8 @@ prueba = (e) => {
 seleccion = (e) => {
     $('.enlaces').removeClass('activo');
     e.classList.add('activo');
-
 }
 
-$(document).ready(function () {
-    $('.enlaces').click(function() {
-        var valor = $(this).attr('data-nombre');
-        if(valor == 'todos') {
-            $('.filtro').show('1000');
-        } else {
-            $('.filtro').not('.' + valor).hide('1000');
-            $('.filtro').filter('.' + valor).show('1000');
-        }
-    })
-});
 // modal = () => {
 //     const modall = document.getElementById("myModal");
 //     const modal2 = document.getElementById("modal-contenido");
@@ -36,3 +24,15 @@ $(document).ready(function () {
     
 //     modall.style.display = "none";
 // }
+
+$(document).ready(function () {
+    $('.enlaces').click(function() {
+        var valor = $(this).attr('data-nombre');
+        if(valor == 'todos') {
+            $('.filtro').show('1000');
+        } else {
+            $('.filtro').not('.' + valor).hide('1000');
+            $('.filtro').filter('.' + valor).show('1000');
+        }
+    })
+});
