@@ -84,12 +84,12 @@
                 <div class='caja filtro amigos'><img  class='imagen' src="fotos/sectionFotos/amigos3.jpg" alt=""></div>
 
                 <div class='caja filtro verano'><img  class='imagen' src="fotos/sectionFotos/verano.jpg" alt=""></div>
-                <div class='caja filtro verano'><img  class='imagen' src="fotos/sectionFotos/verano2.jpg" alt=""></div>
                 <div class='caja filtro verano'><img  class='imagen' src="fotos/sectionFotos/verano3.jpg" alt=""></div>
 
                 <div class='caja filtro familia'><img  class='imagen' src="fotos/sectionFotos/familia1.jpg" alt=""></div>
                 <div class='caja filtro familia'><img  class='imagen' src="fotos/sectionFotos/familia2.jpg" alt=""></div>
                 <div class='caja filtro familia'><img  class='imagen' src="fotos/sectionFotos/familia3.jpg" alt=""></div>
+                <div class='caja filtro familia'><img  class='imagen' src="fotos/sectionFotos/familia4.jpg" alt=""></div>
             </div>
         </div>
 
@@ -123,9 +123,12 @@
             <label for="" style='margin:10px; font-weight: 800;'>Escriba el numero de pokemon que quiere ver:</label><br>
             <input type="text" id='poke-input' class='formulario-input'>  
             <input type="submit" id='poke-boton' class='formulario-submit' value='BUSCAR' onclick="pokemon()">
-            <div id='poke'>
+            <div id='poke'><br>
             </div>
+            <div id='poke-habilidades'></div>
+
         </div>
+
     </section>
 
     <footer>
